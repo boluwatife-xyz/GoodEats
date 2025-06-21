@@ -1,0 +1,268 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    background-image: url(background6.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo{
+   height: 58px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+.container .intro-heading{
+    color: rgb(23, 152, 131);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.box{
+  position: relative;
+  align-items: center;
+}
+.box img{
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    height: 300px;
+    background-color: aqua;
+    transition: 0.5s ease;
+    overflow: hidden;
+
+
+}
+.box h3{
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    align-items: center;
+    
+
+}
+
+.navbar a {
+    color: rgb(23, 152, 131)
+
+}
+
+.btn{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.secbtn{
+    border: 2px solid rgb(23, 152, 131);
+    color: rgb(23, 152, 131);
+    font-weight: bold;
+}
+
+.prybtn{
+    border: 2px solid rgb(23, 152, 131);
+    color: rgb(23, 152, 131);
+    max-width: 140px;
+    
+    
+}
+
+.section-heading h1 {
+   font-size: 50px;
+   color: rgb(231, 195, 195);
+   
+   
+}
+
+
+section{
+    margin: 80px auto;
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    color: white;
+
+}
+
+.main-content .intro-heading{
+    font-size: 100px;
+}
+
+.sub-heading{
+    max-width: 350px;
+    color: rgb(255, 106, 0);
+    margin-top: 38px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    
+
+}
+.section-heading h1{
+    text-align: center;
+}
+.service img{
+    max-width: 120%;
+    border-radius: 10px;
+    gap: 100px;
+    transition: 0.5s ease;
+}
+.box img:hover{
+    transform: scale(1.1);
+}
+
+.container h1{
+    color: rgb(23, 152, 131)
+}
+
+  #reviews .container h1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    max-width: px;
+  }
+
+#about-us .container{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 120px;
+    background: rgb(23, 152, 131);
+    border: 2px solid rgba(152, 0, 0, 0.2);
+    backdrop-filter: blur(90px);
+    border-radius: 16px;
+    max-width: 96vw;
+
+}
+#about-us .container .about-us-content{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+    border-radius: 16px;
+     padding: 20px;
+}
+.about-us-content h1{
+    color: #fff;
+}
+.about-us-content h4{
+    color: rgb(236, 234, 231);
+}
+
+#inquiries{
+    min-height: 500px;
+}
+#inquiries .container{
+    max-width: 95vw;
+    background-image: url(inquiries.jpg);
+    background-position: top;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    border-radius: 16px;
+    padding: 60px;
+
+}
+#inquiries .container h1 {
+    color: rgb(236, 234, 231);
+    margin-bottom: 49px;
+    font-size: 40px;
+    
+
+}
+#inquiries .container p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fff;
+}
+footer .container {
+    display: flex;
+    padding: 66px;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    margin-top: -120px;
+    background-color: rgb(23, 152, 131);
+}
+.footerlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.footerlinks a{
+    color: #fff;
+}
+.container p{
+    color: #fff;
+}
+.btn-pry{
+
+    color: #fff;
+    border: 2px solid white;
+}
+
+@media (max-width: 520px){
+    .navbar{
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100vh;
+        padding-top: 80px;
+    }
+    .navbar li :not(last-child) {
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid white;
+    }
+}
